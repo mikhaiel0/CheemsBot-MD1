@@ -8,8 +8,11 @@
 //want more free bot scripts? subscribe to my youtube channel: https://youtube.com/@DGXeon
 
 const fs = require('fs')
-const chalk = require('chalk')
-
+import('chalk').then(chalk => {
+  // Your code using chalk goes here
+}).catch(error => {
+  console.error('Failed to load chalk:', error);
+});
 //session
 global.sessionid ='ur session id'
 
